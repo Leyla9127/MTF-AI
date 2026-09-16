@@ -320,7 +320,7 @@ const GRAMMAR_CATEGORIES = [
     topics: [
       {
         topic: "1. Present Simple",
-        definition: "Used for facts, habits, and routines — things that are generally true or happen regularly.",
+        definition: "Used for facts, habits, and routines 鈥� things that are generally true or happen regularly.",
         use: "Daily habits, facts, schedules, routines.",
         forms: {
           affirmative: { structure: "Subject + base verb (+s/es for he/she/it)", example: "She works at a hospital." },
@@ -381,7 +381,7 @@ const GRAMMAR_CATEGORIES = [
       {
         topic: "7. Past Perfect",
         definition: "Used for an action that happened before another action or point in the past.",
-        use: "Showing the order of two past events — which one happened first.",
+        use: "Showing the order of two past events 鈥� which one happened first.",
         forms: {
           affirmative: { structure: "Subject + had + past participle", example: "I had already left when she arrived." },
           negative: { structure: "Subject + had + not + past participle", example: "I had not eaten before the meeting." },
@@ -440,7 +440,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Conditional Sentences",
-        definition: "Sentences that describe a result depending on a condition — what happens if something else happens.",
+        definition: "Sentences that describe a result depending on a condition 鈥� what happens if something else happens.",
         structure: "If + condition, + result (0 = fact, 1 = real future, 2 = unreal present, 3 = unreal past)",
         use: "Talking about real possibilities, hypothetical situations, or past regrets.",
         example: "If it rains, I stay home. (real) | If I had money, I would travel. (hypothetical) | If I had studied, I would have passed. (past regret)",
@@ -456,7 +456,7 @@ const GRAMMAR_CATEGORIES = [
         topic: "Verb Conjugation (example: to praise)",
         definition: "Conjugation means changing the form of a verb to match tense, subject, and number.",
         structure: "Base: praise | Past: praised | Past Participle: praised | Present participle: praising",
-        use: "Every verb changes form depending on tense and subject — learning the pattern helps with all tenses.",
+        use: "Every verb changes form depending on tense and subject 鈥� learning the pattern helps with all tenses.",
         example: "I praise her work. She praised the team. They have praised his efforts. We are praising the results.",
       },
     ],
@@ -476,7 +476,7 @@ const GRAMMAR_CATEGORIES = [
         definition: "A transitive verb needs an object to complete its meaning; an intransitive verb does not.",
         structure: "Transitive: subject + verb + object | Intransitive: subject + verb (no object needed)",
         use: "Knowing this helps avoid incomplete or incorrect sentences.",
-        example: "She eats rice. (transitive — rice is the object) He sleeps. (intransitive — no object needed)",
+        example: "She eats rice. (transitive 鈥� rice is the object) He sleeps. (intransitive 鈥� no object needed)",
       },
       {
         topic: "Verb Tips & Common Mistakes",
@@ -539,7 +539,7 @@ const GRAMMAR_CATEGORIES = [
         topic: "Sentence Types by Function",
         definition: "Sentences can be declarative (statement), interrogative (question), imperative (command), or exclamatory (strong feeling).",
         structure: "Declarative: Subject + verb. | Interrogative: Verb/auxiliary + subject...? | Imperative: base verb... | Exclamatory: What/How...!",
-        use: "Choosing the right sentence type for the purpose — telling, asking, ordering, or exclaiming.",
+        use: "Choosing the right sentence type for the purpose 鈥� telling, asking, ordering, or exclaiming.",
         example: "I am tired. (declarative) Are you tired? (interrogative) Sit down. (imperative) What a day! (exclamatory)",
       },
       {
@@ -563,7 +563,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Phrases",
-        definition: "A phrase is a group of words without both a subject and verb, acting as one unit — noun phrase, verb phrase, prepositional phrase.",
+        definition: "A phrase is a group of words without both a subject and verb, acting as one unit 鈥� noun phrase, verb phrase, prepositional phrase.",
         structure: "Noun phrase: the tall man | Verb phrase: has been working | Prepositional phrase: on the table",
         use: "Adding detail to sentences without forming a full clause.",
         example: "The tall man (noun phrase) has been working (verb phrase) on the table (prepositional phrase).",
@@ -575,28 +575,28 @@ const GRAMMAR_CATEGORIES = [
     topics: [
       {
         topic: "Adverbs",
-        definition: "Words that describe a verb, adjective, or another adverb — often telling how, when, where, or how often.",
+        definition: "Words that describe a verb, adjective, or another adverb 鈥� often telling how, when, where, or how often.",
         structure: "Often verb + adverb (many end in -ly)",
         use: "To describe how an action is done, or its time/frequency.",
         example: "She speaks slowly. He always arrives early. This is very important.",
       },
       {
         topic: "Conjunctions",
-        definition: "Words that connect words, phrases, or sentences together — like and, but, because, so, although.",
+        definition: "Words that connect words, phrases, or sentences together 鈥� like and, but, because, so, although.",
         structure: "clause + conjunction + clause",
         use: "To join ideas, show contrast, reason, or result between two parts of a sentence.",
         example: "I wanted to go, but I was tired. I stayed home because it was raining.",
       },
       {
         topic: "Prepositions (in / on / at, etc.)",
-        definition: "Words that show the relationship between a noun and other words — usually time, place, or direction.",
+        definition: "Words that show the relationship between a noun and other words 鈥� usually time, place, or direction.",
         structure: "preposition + noun/pronoun",
         use: "'In' for months, years, enclosed spaces; 'on' for days, dates, surfaces; 'at' for specific times and places.",
         example: "I was born in 1997. The meeting is on Monday at 9am. She's at the office.",
       },
       {
         topic: "Pronouns",
-        definition: "Words that replace a noun so you don't have to repeat it — like he, she, it, they, this, mine.",
+        definition: "Words that replace a noun so you don't have to repeat it 鈥� like he, she, it, they, this, mine.",
         structure: "Subject pronouns (I, you, he) | Object pronouns (me, him, her) | Possessive (mine, his, hers)",
         use: "To avoid repeating the same noun over and over in a sentence or conversation.",
         example: "Sara is my friend. She is kind. I gave her a gift. It was hers to keep.",
@@ -631,7 +631,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Punctuation",
-        definition: "Marks used in writing to make meaning clear — periods, commas, question marks, apostrophes, quotation marks.",
+        definition: "Marks used in writing to make meaning clear 鈥� periods, commas, question marks, apostrophes, quotation marks.",
         structure: "Period (.) ends a statement | Comma (,) separates ideas | Question mark (?) ends a question | Apostrophe (') shows possession/contraction",
         use: "Making written English clear and correctly structured.",
         example: "She's my friend, and she's from Ethiopia. Are you coming?",
@@ -666,9 +666,10 @@ const QUIZ_QUESTIONS = [
   { question: "I saw ___ elephant at the zoo.", options: ["a", "an", "the", "no article needed"], correct: 1, explanation: "Use 'an' before words that start with a vowel sound." },
   { question: "The meeting is ___ Monday ___ 9am.", options: ["in / at", "on / at", "on / in", "at / on"], correct: 1, explanation: "'On' for days, 'at' for specific clock times." },
   { question: "You ___ finish this today.", options: ["can", "must", "may", "might"], correct: 1, explanation: "'Must' expresses a strong obligation or necessity." },
-  { question: "She speaks English ___.", options: ["fluent", "fluently", "fluency", "more fluent"], correct: 1, explanation: "Adverbs (often ending in -ly) describe how an action is done — 'speaks fluently'." },
+  { question: "She speaks English ___.", options: ["fluent", "fluently", "fluency", "more fluent"], correct: 1, explanation: "Adverbs (often ending in -ly) describe how an action is done 鈥� 'speaks fluently'." },
   { question: "The letter ___ by John yesterday.", options: ["wrote", "was written", "is written", "write"], correct: 1, explanation: "Passive voice for past actions: subject + was/were + past participle." },
 ];
+
 const SYNONYM_ANTONYM_WORDS = [
   { word: "Happy", synonyms: ["Glad", "Joyful", "Pleased", "Content", "Cheerful"], antonyms: ["Sad", "Unhappy", "Miserable", "Upset", "Gloomy"] },
   { word: "Big", synonyms: ["Large", "Huge", "Massive", "Enormous", "Giant"], antonyms: ["Small", "Tiny", "Little", "Miniature", "Compact"] },
@@ -702,7 +703,7 @@ export default function MTFAI() {
     {
       role: "assistant",
       text:
-        "Hey! I'm really glad you're here. We can talk about literally anything — your day, your dreams, random stuff. Don't stress about mistakes, that's what I'm here for. So... what's on your mind?",
+        "Hi! I'm your English practice partner. Tell me about your day, or pick something below to get started 鈥� don't worry about mistakes, I'll help you speak more naturally and explain anything simply.",
       correction: null,
       corrections: [],
       pronunciationTip: null,
@@ -734,6 +735,8 @@ export default function MTFAI() {
   const [writingText, setWritingText] = useState("");
   const [writingLoading, setWritingLoading] = useState(false);
   const [writingResult, setWritingResult] = useState(null);
+  const [writingListening, setWritingListening] = useState(false);
+  const writingRecognitionRef = useRef(null);
   const [qaListening, setQaListening] = useState(false);
   const qaRecognitionRef = useRef(null);
   const [grammarIndex, setGrammarIndex] = useState(0);
@@ -801,6 +804,21 @@ export default function MTFAI() {
       qaRec.onend = () => setQaListening(false);
       qaRec.onerror = () => setQaListening(false);
       qaRecognitionRef.current = qaRec;
+
+      const writingRec = new SpeechRecognition();
+      writingRec.continuous = true;
+      writingRec.interimResults = false;
+      writingRec.lang = "en-US";
+      writingRec.onresult = (e) => {
+        let transcript = "";
+        for (let i = e.resultIndex; i < e.results.length; i++) {
+          transcript += e.results[i][0].transcript + " ";
+        }
+        setWritingText((prev) => (prev ? prev + " " + transcript.trim() : transcript.trim()));
+      };
+      writingRec.onend = () => setWritingListening(false);
+      writingRec.onerror = () => setWritingListening(false);
+      writingRecognitionRef.current = writingRec;
     }
   }, []);
 
@@ -860,8 +878,8 @@ export default function MTFAI() {
     }
   };
 
-  const sendMessage = async () => {
-    const text = input.trim();
+  const sendMessage = async (overrideText) => {
+    const text = (overrideText !== undefined ? overrideText : input).trim();
     if (!text || loading) return;
     if (turnsUsed >= DAILY_LIMIT) return;
 
@@ -880,11 +898,11 @@ export default function MTFAI() {
 
       const accentLabel = ACCENTS.find((a) => a.id === accent)?.label || "American";
 
-      const systemPrompt = `You are a warm, upbeat, friendly conversation buddy helping someone practice spoken/written English — think supportive close friend, not a formal tutor. Chat naturally about everyday life, react genuinely, use casual friendly language, ask real follow-up questions, keep replies short (2-4 sentences) like real speech. The learner is practicing a ${accentLabel} accent.
+      const systemPrompt = `You are a warm, upbeat, friendly conversation buddy helping someone practice spoken/written English 鈥� think supportive close friend, not a formal tutor. Chat naturally about everyday life, react genuinely, use casual friendly language, ask real follow-up questions, keep replies short (2-4 sentences) like real speech. The learner is practicing a ${accentLabel} accent.
 
-Separately, carefully review the learner's last message for genuine grammar, tense, preposition, and word-choice errors worth mentioning (not just one) — up to 4 most important ones. Only flag something if it is a real, unambiguous error — never a case where multiple forms are valid. KNOWN TRAP: in a "because"/"that" clause stating a general truth or ongoing belief after a past main clause (e.g. "I continued because I know that X is true"), BOTH present and past tense are correct — do not flag this as an error. When unsure, leave it out. For each real error, give: the original phrase, the corrected phrase, and a short simple explanation of the rule. Return an empty array if there are truly no errors.
+Separately, carefully review the learner's last message for genuine grammar, tense, preposition, and word-choice errors worth mentioning (not just one) 鈥� up to 4 most important ones. Only flag something if it is a real, unambiguous error 鈥� never a case where multiple forms are valid. KNOWN TRAP: in a "because"/"that" clause stating a general truth or ongoing belief after a past main clause (e.g. "I continued because I know that X is true"), BOTH present and past tense are correct 鈥� do not flag this as an error. When unsure, leave it out. For each real error, give: the original phrase, the corrected phrase, and a short simple explanation of the rule. Return an empty array if there are truly no errors.
 
-Also separately, if any word in the learner's message is commonly mispronounced by English learners, give ONE short friendly pronunciation tip — or null if nothing stands out.
+Also separately, if any word in the learner's message is commonly mispronounced by English learners, give ONE short friendly pronunciation tip 鈥� or null if nothing stands out.
 
 Respond ONLY in this exact JSON format, no markdown, no extra text:
 {"reply": "your friendly conversational reply here", "corrections": [{"original": "the wrong phrase", "corrected": "the fixed phrase", "explanation": "short simple rule explanation"}], "pronunciationTip": "short friendly pronunciation tip or null"}`;
@@ -986,6 +1004,25 @@ Respond ONLY in this exact JSON format, no markdown, no extra text:
     speak(currentSentence);
   };
 
+  const normalizeWord = (w) => w.toLowerCase().replace(/[^a-z']/g, "");
+
+  const compareShadowText = (target, said) => {
+    if (!said) return null;
+    const targetWords = target.split(/\s+/).map(normalizeWord).filter(Boolean);
+    const saidWords = said.split(/\s+/).map(normalizeWord).filter(Boolean);
+    const saidSet = new Set(saidWords);
+    let matchCount = 0;
+    const results = targetWords.map((w) => {
+      const matched = saidSet.has(w);
+      if (matched) matchCount++;
+      return { word: w, matched };
+    });
+    const accuracy = targetWords.length
+      ? Math.round((matchCount / targetWords.length) * 100)
+      : 0;
+    return { results, accuracy };
+  };
+
   const toggleShadowListening = () => {
     if (!speechSupported) return;
     setShadowText("");
@@ -1061,7 +1098,7 @@ Respond ONLY in this exact JSON format, no markdown:
       setQaSuggestion(parsed);
       setTurnsUsed((t) => t + 1);
     } catch (err) {
-      setQaSuggestion({ encouragement: "", betterAnswer: "Couldn't reach the coach right now — try again in a moment." });
+      setQaSuggestion({ encouragement: "", betterAnswer: "Couldn't reach the coach right now 鈥� try again in a moment." });
     } finally {
       setQaLoading(false);
     }
@@ -1084,6 +1121,17 @@ Respond ONLY in this exact JSON format, no markdown:
     }
   };
 
+  const toggleWritingListening = () => {
+    if (!speechSupported) return;
+    if (writingListening) {
+      writingRecognitionRef.current.stop();
+      setWritingListening(false);
+    } else {
+      writingRecognitionRef.current.start();
+      setWritingListening(true);
+    }
+  };
+
   const reviewWriting = async () => {
     const text = writingText.trim();
     if (!text || writingLoading) return;
@@ -1093,24 +1141,25 @@ Respond ONLY in this exact JSON format, no markdown:
     try {
       const systemPrompt = `You are a thorough, kind, and LINGUISTICALLY PRECISE English writing teacher reviewing a learner's paragraph. Analyze it carefully and return a full structured review.
 
-CRITICAL ACCURACY RULE: Only flag something as a "correction" if it is a genuine grammatical error — not a case where multiple forms are correct. If a construction is one of several valid options, do NOT list it as a correction. When you are not fully certain a phrase is wrong, leave it out rather than guess. It is better to miss a very minor stylistic nuance than to teach a learner an incorrect "rule."
+CRITICAL ACCURACY RULE: Only flag something as a "correction" if it is a genuine grammatical error 鈥� not a case where multiple forms are correct. If a construction is one of several valid options, do NOT list it as a correction. When you are not fully certain a phrase is wrong, leave it out rather than guess. It is better to miss a very minor stylistic nuance than to teach a learner an incorrect "rule."
 
-SPECIFIC KNOWN TRAP — reason/that-clause tense backshift: When a past-tense main clause is followed by "because"/"that" + a clause stating a general truth or belief the speaker still holds, BOTH present tense and past tense are grammatically correct in that clause. Example: "I continued studying because I know that learning a language takes time" is CORRECT AS WRITTEN — do NOT flag "know" as needing to become "knew". Only flag a tense mismatch in a that/because clause if it states something that was ONLY true in the past (not a lasting belief/fact), e.g. "He said he was hungry" (a past state, not a lasting truth) is fine as is, but "He said he is hungry yesterday" mixing a time marker with wrong tense would be a real error.
+SPECIFIC KNOWN TRAP 鈥� reason/that-clause tense backshift: When a past-tense main clause is followed by "because"/"that" + a clause stating a general truth or belief the speaker still holds, BOTH present tense and past tense are grammatically correct in that clause. Example: "I continued studying because I know that learning a language takes time" is CORRECT AS WRITTEN 鈥� do NOT flag "know" as needing to become "knew". Only flag a tense mismatch in a that/because clause if it states something that was ONLY true in the past (not a lasting belief/fact), e.g. "He said he was hungry" (a past state, not a lasting truth) is fine as is, but "He said he is hungry yesterday" mixing a time marker with wrong tense would be a real error.
 
-SPECIFIC KNOWN TRAP — Past Simple vs Past Continuous: "was/were" + adjective or noun (e.g. "I was tired", "She was a teacher") is PAST SIMPLE, not Past Continuous. Past Continuous requires "was/were" + a verb ending in -ing (e.g. "I was studying", "She was cooking"). Double-check every tense you list against the actual verb forms in the text before including it — do not include a tense unless you can point to the exact word(s) demonstrating it.
+SPECIFIC KNOWN TRAP 鈥� Past Simple vs Past Continuous: "was/were" + adjective or noun (e.g. "I was tired", "She was a teacher") is PAST SIMPLE, not Past Continuous. Past Continuous requires "was/were" + a verb ending in -ing (e.g. "I was studying", "She was cooking"). Double-check every tense you list against the actual verb forms in the text before including it 鈥� do not include a tense unless you can point to the exact word(s) demonstrating it.
 
-SAME PRECISION RULE APPLIES TO VOCABULARY NOTES: if a word or phrase choice is one of several equally natural options (e.g. "wrote" vs "wrote down"), do not imply one is simply better — briefly explain the real difference in nuance/meaning instead, so the learner understands when to use each.
+SAME PRECISION RULE APPLIES TO VOCABULARY NOTES: if a word or phrase choice is one of several equally natural options (e.g. "wrote" vs "wrote down"), do not imply one is simply better 鈥� briefly explain the real difference in nuance/meaning instead, so the learner understands when to use each.
 
 Respond ONLY in this exact JSON format, no markdown, no extra text:
 {
   "subScores": {"grammar": <1-10>, "vocabulary": <1-10>, "naturalness": <1-10>, "overall": <1-10, roughly the average but use judgment>},
   "summary": "one warm, honest sentence about the overall quality",
   "improvementAreas": ["top 1-3 specific things this learner should focus on next, ordered by importance, short phrases like 'Past tense consistency' or 'Verb + preposition patterns'"],
-  "tensesUsed": ["list of tense names actually used in the text, verified against actual verb forms present — e.g. Past Simple, Present Perfect"],
-  "corrections": [{"original": "wrong phrase from the text", "corrected": "fixed phrase", "explanation": "short simple rule explaining why — only for genuine, unambiguous errors"}],
-  "vocabularyNotes": [{"word": "a notable or advanced word they used well, or a word choice worth commenting on", "note": "short comment — praise, or nuance/difference explained accurately, never implying a wrong 'better' form when both are valid"}]
+  "tensesUsed": ["list of tense names actually used in the text, verified against actual verb forms present 鈥� e.g. Past Simple, Present Perfect"],
+  "corrections": [{"original": "wrong phrase from the text", "corrected": "fixed phrase", "explanation": "short simple rule explaining why 鈥� only for genuine, unambiguous errors"}],
+  "vocabularyNotes": [{"word": "a notable or advanced word they used well, or a word choice worth commenting on", "note": "short comment 鈥� praise, or nuance/difference explained accurately, never implying a wrong 'better' form when both are valid"}],
+  "pronunciationTips": [{"word": "a word in the text commonly mispronounced by English learners", "tip": "short friendly tip, e.g. stress pattern or tricky sound"}]
 }
-Find ALL genuine grammar errors worth mentioning (not just one) — but every single one must be a real error, not a matter of style or valid variation. If the writing is excellent, corrections can be an empty array. Always identify at least the main tenses used, and verify each one against the actual text before listing it. Give 2-4 vocabulary notes. improvementAreas should be empty only if the writing is already excellent across the board.`;
+Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every single one must be a real error, not a matter of style or valid variation. If the writing is excellent, corrections can be an empty array. Always identify at least the main tenses used, and verify each one against the actual text before listing it. Give 2-4 vocabulary notes. Give 1-3 pronunciationTips for words in the text that learners commonly struggle to pronounce (empty array if nothing stands out). improvementAreas should be empty only if the writing is already excellent across the board.`;
 
       const response = await fetch("/api/generate", {
         method: "POST",
@@ -1130,11 +1179,12 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
       } catch {
         parsed = {
           subScores: null,
-          summary: "Couldn't fully analyze this — try again in a moment.",
+          summary: "Couldn't fully analyze this 鈥� try again in a moment.",
           improvementAreas: [],
           tensesUsed: [],
           corrections: [],
           vocabularyNotes: [],
+          pronunciationTips: [],
         };
       }
       setWritingResult(parsed);
@@ -1147,6 +1197,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
         tensesUsed: [],
         corrections: [],
         vocabularyNotes: [],
+        pronunciationTips: [],
       });
     } finally {
       setWritingLoading(false);
@@ -1216,7 +1267,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
             lineHeight: 1.5,
           }}
         >
-          Mother tongue, made easy. A friend to talk with, out loud, at your pace.
+          Your language. Your pace. Your AI English teacher.
         </p>
 
         {ttsUnavailable && (
@@ -1229,7 +1280,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               lineHeight: 1.5,
             }}
           >
-            Voice playback isn't available in this browser right now — text still works fine.
+            Voice playback isn't available in this browser right now 鈥� text still works fine.
           </p>
         )}
 
@@ -1374,7 +1425,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               whiteSpace: "nowrap",
             }}
           >
-            <PenLine size={14} /> Write
+            <PenLine size={14} /> Review
           </button>
         </div>
 
@@ -1521,7 +1572,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               marginBottom: 10,
             }}
           >
-            {currentCategory.category} · {sentenceIndex + 1}/
+            {currentCategory.category} 路 {sentenceIndex + 1}/
             {currentCategory.sentences.length}
           </div>
 
@@ -1567,7 +1618,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               marginBottom: 10,
             }}
           >
-            Now repeat it out loud — {repeatCount}/3 times
+            Now repeat it out loud 鈥� {repeatCount}/3 times
           </div>
 
           <button
@@ -1590,21 +1641,64 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
             }}
           >
             {shadowListening ? <Square size={16} /> : <Mic size={16} />}
-            {shadowListening ? "Listening…" : "Tap to repeat"}
+            {shadowListening ? "Listening鈥�" : "Tap to repeat"}
           </button>
-          {shadowText && (
-            <div
-              style={{
-                fontFamily: "'Helvetica Neue', Arial, sans-serif",
-                fontSize: 13,
-                color: "#9CB8AC",
-                textAlign: "center",
-                marginBottom: 16,
-              }}
-            >
-              You said: "{shadowText}"
-            </div>
-          )}
+
+          {shadowText && (() => {
+            const comparison = compareShadowText(currentSentence, shadowText);
+            return (
+              <div
+                style={{
+                  background: "#22383A",
+                  borderRadius: 14,
+                  padding: "14px 16px",
+                  marginBottom: 16,
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 12,
+                    color: "#9CB8AC",
+                    marginBottom: 8,
+                  }}
+                >
+                  You said: "{shadowText}"
+                </div>
+                {comparison && (
+                  <>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 8 }}>
+                      {comparison.results.map((r, i) => (
+                        <span
+                          key={i}
+                          style={{
+                            fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                            fontSize: 13.5,
+                            padding: "4px 9px",
+                            borderRadius: 999,
+                            background: r.matched ? "#1F3A2A" : "#3A1F1F",
+                            color: r.matched ? "#8FBF9F" : "#E0A9A0",
+                            border: "1px solid " + (r.matched ? "#3A5A45" : "#5A3A35"),
+                          }}
+                        >
+                          {r.matched ? "鉁�" : "鉂�"} {r.word}
+                        </span>
+                      ))}
+                    </div>
+                    <div
+                      style={{
+                        fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                        fontSize: 12.5,
+                        color: "#C9A96A",
+                      }}
+                    >
+                      Match: {comparison.accuracy}% 鈥� words marked 鉂� were missing or said differently.
+                    </div>
+                  </>
+                )}
+              </div>
+            );
+          })()}
 
           <div style={{ display: "flex", gap: 10, marginTop: "auto", paddingBottom: 20 }}>
             <button
@@ -1969,6 +2063,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               >
                 <ChevronLeft size={14} /> All topics
               </button>
+
               <div
                 style={{
                   fontFamily: "'Helvetica Neue', Arial, sans-serif",
@@ -2040,7 +2135,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                       lineHeight: 1.5,
                     }}
                   >
-                    💡 {QUIZ_QUESTIONS[quizIndex].explanation}
+                    馃挕 {QUIZ_QUESTIONS[quizIndex].explanation}
                   </p>
                 )}
               </div>
@@ -2094,7 +2189,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                   textAlign: "left",
                 }}
               >
-                <span>📝 Grammar Practice Quiz</span>
+                <span>馃摑 Grammar Practice Quiz</span>
                 <span style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12 }}>
                   {QUIZ_QUESTIONS.length} questions <ChevronRight size={15} />
                 </span>
@@ -2155,7 +2250,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                   marginBottom: 10,
                 }}
               >
-                {GRAMMAR_CATEGORIES[grammarCategoryIndex].category} · {grammarIndex + 1}/
+                {GRAMMAR_CATEGORIES[grammarCategoryIndex].category} 路 {grammarIndex + 1}/
                 {GRAMMAR_CATEGORIES[grammarCategoryIndex].topics.length}
               </div>
 
@@ -2346,11 +2441,12 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               <Volume2 size={18} color="#E8B04B" />
             </button>
           </div>
+
           <div style={{ display: "flex", gap: 8, marginBottom: 12, alignItems: "flex-end" }}>
             <textarea
               value={qaAnswer}
               onChange={(e) => setQaAnswer(e.target.value)}
-              placeholder={qaListening ? "Listening…" : "Type or speak your answer…"}
+              placeholder={qaListening ? "Listening鈥�" : "Type or speak your answer鈥�"}
               rows={3}
               style={{
                 flex: 1,
@@ -2404,7 +2500,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               marginBottom: 8,
             }}
           >
-            {limitReached ? "Daily limit reached" : qaLoading ? "Thinking…" : "Check my answer"}
+            {limitReached ? "Daily limit reached" : qaLoading ? "Thinking鈥�" : "Check my answer"}
           </button>
           {limitReached && (
             <p
@@ -2471,6 +2567,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
           </button>
         </div>
       )}
+
       {tab === "write" && (
         <div
           style={{
@@ -2492,28 +2589,50 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               lineHeight: 1.5,
             }}
           >
-            Write a few sentences or a paragraph — get a full review: grammar, tenses used, and vocabulary tips.
+            Speak or write a few sentences 鈥� get a full review: grammar, vocabulary tips, and pronunciation notes.
           </p>
 
-          <textarea
-            value={writingText}
-            onChange={(e) => setWritingText(e.target.value)}
-            placeholder="Write your paragraph here…"
-            rows={7}
-            style={{
-              background: "#22383A",
-              border: "1px solid #35504F",
-              borderRadius: 14,
-              padding: "12px 14px",
-              color: "#F3ECDD",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 14.5,
-              outline: "none",
-              resize: "none",
-              marginBottom: 12,
-              lineHeight: 1.5,
-            }}
-          />
+          <div style={{ display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 12 }}>
+            <textarea
+              value={writingText}
+              onChange={(e) => setWritingText(e.target.value)}
+              placeholder={writingListening ? "Listening鈥� speak your paragraph" : "Speak (tap mic) or type your paragraph here鈥�"}
+              rows={7}
+              style={{
+                flex: 1,
+                background: "#22383A",
+                border: "1px solid #35504F",
+                borderRadius: 14,
+                padding: "12px 14px",
+                color: "#F3ECDD",
+                fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                fontSize: 14.5,
+                outline: "none",
+                resize: "none",
+                lineHeight: 1.5,
+              }}
+            />
+            <button
+              onClick={toggleWritingListening}
+              disabled={!speechSupported}
+              style={{
+                background: writingListening ? "#C9634A" : "#E8B04B",
+                border: "none",
+                borderRadius: 12,
+                width: 44,
+                height: 44,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: speechSupported ? "pointer" : "not-allowed",
+                flexShrink: 0,
+                opacity: speechSupported ? 1 : 0.4,
+              }}
+              title={speechSupported ? "Tap to speak your paragraph" : "Voice input not supported"}
+            >
+              {writingListening ? <Square size={17} color="#1B2E22" /> : <Mic size={18} color="#1B2E22" />}
+            </button>
+          </div>
 
           <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
             <button
@@ -2533,7 +2652,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                 opacity: writingText.trim() && !limitReached ? 1 : 0.5,
               }}
             >
-              {limitReached ? "Daily limit reached" : writingLoading ? "Reviewing…" : "Review my writing"}
+              {limitReached ? "Daily limit reached" : writingLoading ? "Reviewing鈥�" : "Review my writing"}
             </button>
             {writingResult && (
               <button
@@ -2595,7 +2714,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                     <p style={{ fontSize: 20, fontWeight: 700, margin: 0, color: "#F3ECDD" }}>
                       {writingResult.subScores && writingResult.subScores.overall !== undefined
                         ? `${writingResult.subScores.overall}/10 Overall`
-                        : "—"}
+                        : "鈥�"}
                     </p>
                     <p
                       style={{
@@ -2751,16 +2870,16 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                         }}
                       >
                         <div style={{ display: "flex", gap: 6, color: "#C9634A" }}>
-                          <span>❌</span>
+                          <span>鉂�</span>
                           <span style={{ textDecoration: "line-through", opacity: 0.85 }}>{c.original}</span>
                         </div>
                         <div style={{ display: "flex", gap: 6, color: "#8FBF9F", fontWeight: 600 }}>
-                          <span>✅</span>
+                          <span>鉁�</span>
                           <span>{c.corrected}</span>
                         </div>
                         {c.explanation && (
                           <div style={{ display: "flex", gap: 6, color: "#B9AE95" }}>
-                            <span>💡</span>
+                            <span>馃挕</span>
                             <span>{c.explanation}</span>
                           </div>
                         )}
@@ -2798,7 +2917,54 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                         }}
                       >
                         <span style={{ color: "#E8B04B", fontWeight: 600 }}>{v.word}</span>
-                        <span style={{ color: "#B9AE95" }}> — {v.note}</span>
+                        <span style={{ color: "#B9AE95" }}> 鈥� {v.note}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {writingResult.pronunciationTips && writingResult.pronunciationTips.length > 0 && (
+                <div>
+                  <p
+                    style={{
+                      fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                      fontSize: 11.5,
+                      color: "#9CB8AC",
+                      textTransform: "uppercase",
+                      letterSpacing: 0.5,
+                      margin: "0 0 8px",
+                    }}
+                  >
+                    Pronunciation tips
+                  </p>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                    {writingResult.pronunciationTips.map((p, pi) => (
+                      <div
+                        key={pi}
+                        style={{
+                          fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                          fontSize: 12.5,
+                          background: "#0F1E1F",
+                          border: "1px solid #35504F",
+                          borderRadius: 10,
+                          padding: "10px 12px",
+                          display: "flex",
+                          gap: 8,
+                          alignItems: "flex-start",
+                        }}
+                      >
+                        <Volume2 size={13} style={{ marginTop: 2, flexShrink: 0, color: "#8FBF9F" }} />
+                        <span>
+                          <span style={{ color: "#8FBF9F", fontWeight: 600 }}>{p.word}</span>
+                          <span style={{ color: "#B9AE95" }}> 鈥� {p.tip}</span>
+                        </span>
+                        <button
+                          onClick={() => speak(p.word)}
+                          style={{ background: "transparent", border: "none", cursor: "pointer", flexShrink: 0, padding: 0, marginLeft: "auto" }}
+                        >
+                          <Volume2 size={13} color="#8FBF9F" />
+                        </button>
                       </div>
                     ))}
                   </div>
@@ -2890,13 +3056,13 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                       }}
                     >
                       <div style={{ display: "flex", gap: 6, color: "#C9634A" }}>
-                        <span>❌</span>
+                        <span>鉂�</span>
                         <span style={{ textDecoration: "line-through", opacity: 0.85 }}>
                           {c.original}
                         </span>
                       </div>
                       <div style={{ display: "flex", gap: 6, alignItems: "flex-start", color: "#8FBF9F" }}>
-                        <span>✅</span>
+                        <span>鉁�</span>
                         <span style={{ flex: 1, fontWeight: 600 }}>{c.corrected}</span>
                         <button
                           onClick={() => speak(c.corrected)}
@@ -2907,7 +3073,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                       </div>
                       {c.explanation && (
                         <div style={{ display: "flex", gap: 6, color: "#B9AE95" }}>
-                          <span>💡</span>
+                          <span>馃挕</span>
                           <span>{c.explanation}</span>
                         </div>
                       )}
@@ -2936,6 +3102,33 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
             )}
           </div>
         ))}
+        {messages.length === 1 && (
+          <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 4 }}>
+            {[
+              { label: "Talk about my day", prompt: "Let's talk about my day today." },
+              { label: "Practice an interview", prompt: "Can we practice a job interview?" },
+              { label: "Improve my English", prompt: "I want to improve my English 鈥� where should we start?" },
+            ].map((s) => (
+              <button
+                key={s.label}
+                onClick={() => sendMessage(s.prompt)}
+                style={{
+                  background: "#22383A",
+                  border: "1px solid #35504F",
+                  borderRadius: 12,
+                  padding: "11px 14px",
+                  color: "#F3ECDD",
+                  fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 14,
+                  cursor: "pointer",
+                  textAlign: "left",
+                }}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        )}
         {loading && (
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <div
@@ -2947,7 +3140,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
                 fontSize: 14,
               }}
             >
-              typing…
+              typing鈥�
             </div>
           </div>
         )}
@@ -2970,7 +3163,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
             }}
           >
             You've used today's {DAILY_LIMIT} free conversations. Come back
-            tomorrow — or premium (unlimited) is coming soon.
+            tomorrow 鈥� or premium (unlimited) is coming soon.
           </div>
         ) : (
           <div
@@ -3011,7 +3204,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder={listening ? "Listening…" : "Type or tap the mic to speak…"}
+              placeholder={listening ? "Listening鈥�" : "Type or tap the mic to speak鈥�"}
               rows={1}
               style={{
                 flex: 1,
@@ -3056,7 +3249,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) — but every si
               textAlign: "center",
             }}
           >
-            Voice input isn't supported in this browser — typing still works.
+            Voice input isn't supported in this browser 鈥� typing still works.
           </p>
         )}
       </div>

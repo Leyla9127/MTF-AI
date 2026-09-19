@@ -12,9 +12,21 @@ import {
   ChevronLeft,
   PenLine,
   Award,
+  BookOpen,
+  Menu,
 } from "lucide-react";
 
 const DAILY_LIMIT = 3;
+
+const TAB_LIST = [
+  { id: "chat", label: "Chat", Icon: MessageCircle },
+  { id: "practice", label: "Practice", Icon: Repeat },
+  { id: "vocab", label: "Words", Icon: Sparkles },
+  { id: "grammar", label: "Grammar", Icon: Settings },
+  { id: "reading", label: "Reading", Icon: BookOpen },
+  { id: "qa", label: "Q&A", Icon: MessageCircle },
+  { id: "write", label: "Review", Icon: PenLine },
+];
 
 const ACCENTS = [
   { id: "en-US", label: "American" },
@@ -320,7 +332,7 @@ const GRAMMAR_CATEGORIES = [
     topics: [
       {
         topic: "1. Present Simple",
-        definition: "Used for facts, habits, and routines 鈥� things that are generally true or happen regularly.",
+        definition: "Used for facts, habits, and routines - things that are generally true or happen regularly.",
         use: "Daily habits, facts, schedules, routines.",
         forms: {
           affirmative: { structure: "Subject + base verb (+s/es for he/she/it)", example: "She works at a hospital." },
@@ -381,7 +393,7 @@ const GRAMMAR_CATEGORIES = [
       {
         topic: "7. Past Perfect",
         definition: "Used for an action that happened before another action or point in the past.",
-        use: "Showing the order of two past events 鈥� which one happened first.",
+        use: "Showing the order of two past events - which one happened first.",
         forms: {
           affirmative: { structure: "Subject + had + past participle", example: "I had already left when she arrived." },
           negative: { structure: "Subject + had + not + past participle", example: "I had not eaten before the meeting." },
@@ -440,7 +452,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Conditional Sentences",
-        definition: "Sentences that describe a result depending on a condition 鈥� what happens if something else happens.",
+        definition: "Sentences that describe a result depending on a condition - what happens if something else happens.",
         structure: "If + condition, + result (0 = fact, 1 = real future, 2 = unreal present, 3 = unreal past)",
         use: "Talking about real possibilities, hypothetical situations, or past regrets.",
         example: "If it rains, I stay home. (real) | If I had money, I would travel. (hypothetical) | If I had studied, I would have passed. (past regret)",
@@ -456,7 +468,7 @@ const GRAMMAR_CATEGORIES = [
         topic: "Verb Conjugation (example: to praise)",
         definition: "Conjugation means changing the form of a verb to match tense, subject, and number.",
         structure: "Base: praise | Past: praised | Past Participle: praised | Present participle: praising",
-        use: "Every verb changes form depending on tense and subject 鈥� learning the pattern helps with all tenses.",
+        use: "Every verb changes form depending on tense and subject - learning the pattern helps with all tenses.",
         example: "I praise her work. She praised the team. They have praised his efforts. We are praising the results.",
       },
     ],
@@ -476,7 +488,7 @@ const GRAMMAR_CATEGORIES = [
         definition: "A transitive verb needs an object to complete its meaning; an intransitive verb does not.",
         structure: "Transitive: subject + verb + object | Intransitive: subject + verb (no object needed)",
         use: "Knowing this helps avoid incomplete or incorrect sentences.",
-        example: "She eats rice. (transitive 鈥� rice is the object) He sleeps. (intransitive 鈥� no object needed)",
+        example: "She eats rice. (transitive - rice is the object) He sleeps. (intransitive - no object needed)",
       },
       {
         topic: "Verb Tips & Common Mistakes",
@@ -539,7 +551,7 @@ const GRAMMAR_CATEGORIES = [
         topic: "Sentence Types by Function",
         definition: "Sentences can be declarative (statement), interrogative (question), imperative (command), or exclamatory (strong feeling).",
         structure: "Declarative: Subject + verb. | Interrogative: Verb/auxiliary + subject...? | Imperative: base verb... | Exclamatory: What/How...!",
-        use: "Choosing the right sentence type for the purpose 鈥� telling, asking, ordering, or exclaiming.",
+        use: "Choosing the right sentence type for the purpose - telling, asking, ordering, or exclaiming.",
         example: "I am tired. (declarative) Are you tired? (interrogative) Sit down. (imperative) What a day! (exclamatory)",
       },
       {
@@ -563,7 +575,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Phrases",
-        definition: "A phrase is a group of words without both a subject and verb, acting as one unit 鈥� noun phrase, verb phrase, prepositional phrase.",
+        definition: "A phrase is a group of words without both a subject and verb, acting as one unit - noun phrase, verb phrase, prepositional phrase.",
         structure: "Noun phrase: the tall man | Verb phrase: has been working | Prepositional phrase: on the table",
         use: "Adding detail to sentences without forming a full clause.",
         example: "The tall man (noun phrase) has been working (verb phrase) on the table (prepositional phrase).",
@@ -575,28 +587,28 @@ const GRAMMAR_CATEGORIES = [
     topics: [
       {
         topic: "Adverbs",
-        definition: "Words that describe a verb, adjective, or another adverb 鈥� often telling how, when, where, or how often.",
+        definition: "Words that describe a verb, adjective, or another adverb - often telling how, when, where, or how often.",
         structure: "Often verb + adverb (many end in -ly)",
         use: "To describe how an action is done, or its time/frequency.",
         example: "She speaks slowly. He always arrives early. This is very important.",
       },
       {
         topic: "Conjunctions",
-        definition: "Words that connect words, phrases, or sentences together 鈥� like and, but, because, so, although.",
+        definition: "Words that connect words, phrases, or sentences together - like and, but, because, so, although.",
         structure: "clause + conjunction + clause",
         use: "To join ideas, show contrast, reason, or result between two parts of a sentence.",
         example: "I wanted to go, but I was tired. I stayed home because it was raining.",
       },
       {
         topic: "Prepositions (in / on / at, etc.)",
-        definition: "Words that show the relationship between a noun and other words 鈥� usually time, place, or direction.",
+        definition: "Words that show the relationship between a noun and other words - usually time, place, or direction.",
         structure: "preposition + noun/pronoun",
         use: "'In' for months, years, enclosed spaces; 'on' for days, dates, surfaces; 'at' for specific times and places.",
         example: "I was born in 1997. The meeting is on Monday at 9am. She's at the office.",
       },
       {
         topic: "Pronouns",
-        definition: "Words that replace a noun so you don't have to repeat it 鈥� like he, she, it, they, this, mine.",
+        definition: "Words that replace a noun so you don't have to repeat it - like he, she, it, they, this, mine.",
         structure: "Subject pronouns (I, you, he) | Object pronouns (me, him, her) | Possessive (mine, his, hers)",
         use: "To avoid repeating the same noun over and over in a sentence or conversation.",
         example: "Sara is my friend. She is kind. I gave her a gift. It was hers to keep.",
@@ -631,7 +643,7 @@ const GRAMMAR_CATEGORIES = [
       },
       {
         topic: "Punctuation",
-        definition: "Marks used in writing to make meaning clear 鈥� periods, commas, question marks, apostrophes, quotation marks.",
+        definition: "Marks used in writing to make meaning clear - periods, commas, question marks, apostrophes, quotation marks.",
         structure: "Period (.) ends a statement | Comma (,) separates ideas | Question mark (?) ends a question | Apostrophe (') shows possession/contraction",
         use: "Making written English clear and correctly structured.",
         example: "She's my friend, and she's from Ethiopia. Are you coming?",
@@ -644,6 +656,92 @@ const GRAMMAR_CATEGORIES = [
         example: "I enjoy learning English. I want to learn English. Swimming is fun.",
       },
     ],
+  },
+];
+
+const READING_PASSAGES = [
+  {
+    level: "Beginner",
+    title: "A Morning Routine",
+    text: "Sara wakes up at six every morning. She drinks a cup of tea and reads the news on her phone. After breakfast, she walks to the bus stop. The bus arrives at seven fifteen. Sara works at a small shop in the city center. She likes her job because she meets many interesting people every day.",
+    questions: [
+      { question: "What time does Sara wake up?", options: ["Five", "Six", "Seven", "Eight"], correct: 1, explanation: "The passage says 'Sara wakes up at six every morning.'" },
+      { question: "What does Sara drink in the morning?", options: ["Coffee", "Juice", "Tea", "Water"], correct: 2, explanation: "It says 'She drinks a cup of tea.'" },
+      { question: "Why does Sara like her job?", options: ["It pays well", "She meets interesting people", "It's close to home", "She works alone"], correct: 1, explanation: "The passage says she 'meets many interesting people every day.'" },
+    ],
+  },
+  {
+    level: "Beginner",
+    title: "The Weekend Market",
+    text: "Every Saturday, a big market opens near the river. Farmers bring fresh vegetables and fruit. There are also stalls selling bread, cheese, and flowers. Many families visit the market together. Children often get small treats like fruit or sweets from friendly sellers. The market closes at two in the afternoon.",
+    questions: [
+      { question: "When does the market open?", options: ["Every day", "Every Saturday", "Every Sunday", "Once a month"], correct: 1, explanation: "It says 'Every Saturday, a big market opens.'" },
+      { question: "What do farmers bring?", options: ["Clothes", "Fresh vegetables and fruit", "Furniture", "Electronics"], correct: 1, explanation: "The passage mentions 'Farmers bring fresh vegetables and fruit.'" },
+      { question: "What time does the market close?", options: ["Noon", "1pm", "2pm", "5pm"], correct: 2, explanation: "It says 'The market closes at two in the afternoon.'" },
+    ],
+  },
+  {
+    level: "Intermediate",
+    title: "Learning a New Skill",
+    text: "Many adults hesitate to learn a new skill because they fear making mistakes in front of others. However, research shows that mistakes are actually an essential part of learning. When we make an error and correct it, our brains form stronger connections than when we get something right immediately. This is why patient practice, rather than perfection, leads to real progress over time.",
+    questions: [
+      { question: "Why do many adults hesitate to learn new skills?", options: ["They lack time", "They fear making mistakes", "They dislike learning", "They already know everything"], correct: 1, explanation: "The passage states adults 'hesitate to learn a new skill because they fear making mistakes.'" },
+      { question: "According to the passage, what happens when we correct an error?", options: ["We forget it quickly", "Our brains form stronger connections", "We become less confident", "Nothing changes"], correct: 1, explanation: "It says 'our brains form stronger connections than when we get something right immediately.'" },
+      { question: "What does the passage say leads to real progress?", options: ["Natural talent", "Avoiding mistakes", "Patient practice", "Studying alone"], correct: 2, explanation: "The passage concludes that 'patient practice, rather than perfection, leads to real progress.'" },
+    ],
+  },
+  {
+    level: "Intermediate",
+    title: "The Rise of Remote Work",
+    text: "Over the past few years, more companies have allowed employees to work from home. This shift has changed how people balance their personal and professional lives. Some workers report feeling more productive without the distractions of a busy office. Others, however, miss the social connection that comes from working alongside colleagues. Companies are now experimenting with hybrid models, combining office days with remote flexibility.",
+    questions: [
+      { question: "What has changed for many companies recently?", options: ["They closed offices permanently", "They allowed employees to work from home", "They stopped hiring", "They reduced salaries"], correct: 1, explanation: "The passage says companies 'have allowed employees to work from home.'" },
+      { question: "What do some workers miss about office life?", options: ["The commute", "The social connection with colleagues", "The noise", "The long hours"], correct: 1, explanation: "It mentions workers 'miss the social connection that comes from working alongside colleagues.'" },
+      { question: "What are companies now experimenting with?", options: ["Four-day work weeks", "Hybrid models", "Higher salaries", "Fewer meetings"], correct: 1, explanation: "The passage states companies are 'experimenting with hybrid models.'" },
+    ],
+  },
+  {
+    level: "Advanced",
+    title: "The Value of Deep Listening",
+    text: "In an age dominated by rapid digital exchanges, the practice of truly listening to another person has become increasingly rare. Deep listening requires more than simply waiting for one's turn to speak; it demands genuine attention to tone, context, and unspoken meaning. Psychologists argue that this quality of attentiveness not only strengthens relationships but also fosters a deeper form of empathy that superficial conversation rarely achieves.",
+    questions: [
+      { question: "What has become rare according to the passage?", options: ["Digital communication", "Deep listening", "Public speaking", "Written communication"], correct: 1, explanation: "The passage states 'the practice of truly listening to another person has become increasingly rare.'" },
+      { question: "What does deep listening require beyond waiting to speak?", options: ["Speaking loudly", "Genuine attention to tone, context, and unspoken meaning", "Taking notes", "Interrupting politely"], correct: 1, explanation: "It says deep listening 'demands genuine attention to tone, context, and unspoken meaning.'" },
+      { question: "What do psychologists say this attentiveness fosters?", options: ["Faster conversations", "A deeper form of empathy", "Better memory", "Less stress"], correct: 1, explanation: "The passage states it 'fosters a deeper form of empathy.'" },
+    ],
+  },
+];
+
+const WRITING_TIPS = [
+  {
+    title: "Basic Paragraph Structure",
+    explanation: "A good paragraph usually has one main idea, introduced in the first sentence (the topic sentence), followed by 2-4 sentences that support or explain it.",
+    example: "Topic sentence: 'Learning English online has many benefits.' Supporting sentences explain what those benefits are, one at a time.",
+  },
+  {
+    title: "Essay Structure: Introduction, Body, Conclusion",
+    explanation: "A simple essay has three parts: an introduction that states your main idea, body paragraphs that each cover one supporting point, and a conclusion that summarizes your ideas.",
+    example: "Introduction: 'Technology has changed how people learn languages.' Body: one paragraph per reason. Conclusion: 'In summary, technology has made language learning more accessible than ever.'",
+  },
+  {
+    title: "Connecting Your Ideas (Cohesive Devices)",
+    explanation: "Words like 'however', 'in addition', 'therefore', and 'for example' help your writing flow smoothly between ideas, instead of feeling like a list of separate sentences.",
+    example: "'I enjoy speaking practice. However, I still find grammar challenging.' The word 'however' shows a contrast between the two ideas.",
+  },
+  {
+    title: "Avoiding Repetition",
+    explanation: "Using the same word again and again can make writing feel flat. Try using synonyms or rephrasing instead of repeating the exact same word.",
+    example: "Instead of: 'The app is good. The app helps me learn. The app is easy to use.' Try: 'The app is helpful - it supports my learning and is easy to use.'",
+  },
+  {
+    title: "Being Specific, Not Vague",
+    explanation: "Specific details make writing more convincing and interesting than vague, general statements.",
+    example: "Vague: 'I learned a lot from this app.' Specific: 'I learned 50 new words and improved my past tense usage using this app.'",
+  },
+  {
+    title: "Reading Your Writing Out Loud",
+    explanation: "Before finishing a piece of writing, try reading it out loud. Sentences that sound awkward when spoken often need to be rewritten.",
+    example: "If a sentence is hard to say in one breath, it may be too long - consider splitting it into two shorter sentences.",
   },
 ];
 
@@ -666,7 +764,7 @@ const QUIZ_QUESTIONS = [
   { question: "I saw ___ elephant at the zoo.", options: ["a", "an", "the", "no article needed"], correct: 1, explanation: "Use 'an' before words that start with a vowel sound." },
   { question: "The meeting is ___ Monday ___ 9am.", options: ["in / at", "on / at", "on / in", "at / on"], correct: 1, explanation: "'On' for days, 'at' for specific clock times." },
   { question: "You ___ finish this today.", options: ["can", "must", "may", "might"], correct: 1, explanation: "'Must' expresses a strong obligation or necessity." },
-  { question: "She speaks English ___.", options: ["fluent", "fluently", "fluency", "more fluent"], correct: 1, explanation: "Adverbs (often ending in -ly) describe how an action is done 鈥� 'speaks fluently'." },
+  { question: "She speaks English ___.", options: ["fluent", "fluently", "fluency", "more fluent"], correct: 1, explanation: "Adverbs (often ending in -ly) describe how an action is done - 'speaks fluently'." },
   { question: "The letter ___ by John yesterday.", options: ["wrote", "was written", "is written", "write"], correct: 1, explanation: "Passive voice for past actions: subject + was/were + past participle." },
 ];
 
@@ -703,7 +801,7 @@ export default function MTFAI() {
     {
       role: "assistant",
       text:
-        "Hi! I'm your English practice partner. Tell me about your day, or pick something below to get started 鈥� don't worry about mistakes, I'll help you speak more naturally and explain anything simply.",
+        "Hi! I'm your English practice partner. Tell me about your day, or pick something below to get started - don't worry about mistakes, I'll help you speak more naturally and explain anything simply.",
       correction: null,
       corrections: [],
       pronunciationTip: null,
@@ -716,6 +814,7 @@ export default function MTFAI() {
   const [speechSupported, setSpeechSupported] = useState(true);
   const [ttsUnavailable, setTtsUnavailable] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [showTabMenu, setShowTabMenu] = useState(false);
   const [accent, setAccent] = useState("en-US");
   const [gender, setGender] = useState("female");
   const [voices, setVoices] = useState([]);
@@ -747,6 +846,13 @@ export default function MTFAI() {
   const [quizSelected, setQuizSelected] = useState(null);
   const [quizScore, setQuizScore] = useState(0);
   const [quizAnswered, setQuizAnswered] = useState(0);
+  const [readingPassageIndex, setReadingPassageIndex] = useState(null);
+  const [readingQIndex, setReadingQIndex] = useState(0);
+  const [readingSelected, setReadingSelected] = useState(null);
+  const [readingScore, setReadingScore] = useState(0);
+  const [readingAnswered, setReadingAnswered] = useState(0);
+  const [writingTipsMode, setWritingTipsMode] = useState(false);
+  const [writingTipIndex, setWritingTipIndex] = useState(0);
   const [wordsMode, setWordsMode] = useState("new");
   const [synIndex, setSynIndex] = useState(0);
   const recognitionRef = useRef(null);
@@ -839,9 +945,11 @@ export default function MTFAI() {
     }
   };
 
+  const [lastVoiceUsed, setLastVoiceUsed] = useState(null);
+
   const pickVoice = (voiceList) => {
     if (!voiceList.length) return null;
-    const langMatches = voiceList.filter((v) => v.lang === accent);
+    const langMatches = voiceList.filter((v) => v.lang === accent || v.lang.startsWith(accent));
     const pool = langMatches.length ? langMatches : voiceList.filter((v) => v.lang.startsWith("en"));
     const femaleHints = ["female", "samantha", "victoria", "karen", "tessa", "zira", "susan", "moira"];
     const maleHints = ["male", "daniel", "fred", "alex", "arthur", "george", "david"];
@@ -867,8 +975,10 @@ export default function MTFAI() {
       if (v) {
         utter.voice = v;
         utter.lang = v.lang;
+        setLastVoiceUsed({ name: v.name, lang: v.lang, matchedAccent: v.lang === accent || v.lang.startsWith(accent) });
       } else {
         utter.lang = accent;
+        setLastVoiceUsed(null);
       }
       utter.onerror = () => setTtsUnavailable(true);
       utter.onstart = () => setTtsUnavailable(false);
@@ -898,11 +1008,11 @@ export default function MTFAI() {
 
       const accentLabel = ACCENTS.find((a) => a.id === accent)?.label || "American";
 
-      const systemPrompt = `You are a warm, upbeat, friendly conversation buddy helping someone practice spoken/written English 鈥� think supportive close friend, not a formal tutor. Chat naturally about everyday life, react genuinely, use casual friendly language, ask real follow-up questions, keep replies short (2-4 sentences) like real speech. The learner is practicing a ${accentLabel} accent.
+      const systemPrompt = `You are a warm, upbeat, friendly conversation buddy helping someone practice spoken/written English - think supportive close friend, not a formal tutor. Chat naturally about everyday life, react genuinely, use casual friendly language, ask real follow-up questions, keep replies short (2-4 sentences) like real speech. The learner is practicing a ${accentLabel} accent.
 
-Separately, carefully review the learner's last message for genuine grammar, tense, preposition, and word-choice errors worth mentioning (not just one) 鈥� up to 4 most important ones. Only flag something if it is a real, unambiguous error 鈥� never a case where multiple forms are valid. KNOWN TRAP: in a "because"/"that" clause stating a general truth or ongoing belief after a past main clause (e.g. "I continued because I know that X is true"), BOTH present and past tense are correct 鈥� do not flag this as an error. When unsure, leave it out. For each real error, give: the original phrase, the corrected phrase, and a short simple explanation of the rule. Return an empty array if there are truly no errors.
+Separately, carefully review the learner's last message for genuine grammar, tense, preposition, and word-choice errors worth mentioning (not just one) - up to 4 most important ones. Only flag something if it is a real, unambiguous error - never a case where multiple forms are valid. KNOWN TRAP: in a "because"/"that" clause stating a general truth or ongoing belief after a past main clause (e.g. "I continued because I know that X is true"), BOTH present and past tense are correct - do not flag this as an error. When unsure, leave it out. For each real error, give: the original phrase, the corrected phrase, and a short simple explanation of the rule. Return an empty array if there are truly no errors.
 
-Also separately, if any word in the learner's message is commonly mispronounced by English learners, give ONE short friendly pronunciation tip 鈥� or null if nothing stands out.
+Also separately, if any word in the learner's message is commonly mispronounced by English learners, give ONE short friendly pronunciation tip - or null if nothing stands out.
 
 Respond ONLY in this exact JSON format, no markdown, no extra text:
 {"reply": "your friendly conversational reply here", "corrections": [{"original": "the wrong phrase", "corrected": "the fixed phrase", "explanation": "short simple rule explanation"}], "pronunciationTip": "short friendly pronunciation tip or null"}`;
@@ -918,6 +1028,9 @@ Respond ONLY in this exact JSON format, no markdown, no extra text:
       });
 
       const data = await response.json();
+      if (!response.ok || data.error) {
+        throw new Error(data.error?.message || `Server responded with status ${response.status}`);
+      }
       const raw = data.content
         .map((b) => (b.type === "text" ? b.text : ""))
         .join("")
@@ -948,7 +1061,7 @@ Respond ONLY in this exact JSON format, no markdown, no extra text:
         ...prev,
         {
           role: "assistant",
-          text: "Ah, something glitched reaching the conversation service. Try again in a sec.",
+          text: "Couldn't reach the AI right now. Reason: " + (err.message || "unknown error") + " - if this keeps happening, the free credit may be used up.",
           corrections: [],
           pronunciationTip: null,
         },
@@ -998,6 +1111,29 @@ Respond ONLY in this exact JSON format, no markdown, no extra text:
   const nextQuizQuestion = () => {
     setQuizSelected(null);
     setQuizIndex((i) => (i + 1) % QUIZ_QUESTIONS.length);
+  };
+
+  const openReadingPassage = (idx) => {
+    setReadingPassageIndex(idx);
+    setReadingQIndex(0);
+    setReadingSelected(null);
+    setReadingScore(0);
+    setReadingAnswered(0);
+  };
+
+  const selectReadingAnswer = (idx) => {
+    if (readingSelected !== null) return;
+    setReadingSelected(idx);
+    setReadingAnswered((a) => a + 1);
+    const passage = READING_PASSAGES[readingPassageIndex];
+    if (idx === passage.questions[readingQIndex].correct) {
+      setReadingScore((s) => s + 1);
+    }
+  };
+
+  const nextReadingQuestion = () => {
+    setReadingSelected(null);
+    setReadingQIndex((i) => i + 1);
   };
 
   const playCurrentSentence = () => {
@@ -1098,7 +1234,7 @@ Respond ONLY in this exact JSON format, no markdown:
       setQaSuggestion(parsed);
       setTurnsUsed((t) => t + 1);
     } catch (err) {
-      setQaSuggestion({ encouragement: "", betterAnswer: "Couldn't reach the coach right now 鈥� try again in a moment." });
+      setQaSuggestion({ encouragement: "", betterAnswer: "Couldn't reach the coach right now - try again in a moment." });
     } finally {
       setQaLoading(false);
     }
@@ -1141,25 +1277,25 @@ Respond ONLY in this exact JSON format, no markdown:
     try {
       const systemPrompt = `You are a thorough, kind, and LINGUISTICALLY PRECISE English writing teacher reviewing a learner's paragraph. Analyze it carefully and return a full structured review.
 
-CRITICAL ACCURACY RULE: Only flag something as a "correction" if it is a genuine grammatical error 鈥� not a case where multiple forms are correct. If a construction is one of several valid options, do NOT list it as a correction. When you are not fully certain a phrase is wrong, leave it out rather than guess. It is better to miss a very minor stylistic nuance than to teach a learner an incorrect "rule."
+CRITICAL ACCURACY RULE: Only flag something as a "correction" if it is a genuine grammatical error - not a case where multiple forms are correct. If a construction is one of several valid options, do NOT list it as a correction. When you are not fully certain a phrase is wrong, leave it out rather than guess. It is better to miss a very minor stylistic nuance than to teach a learner an incorrect "rule."
 
-SPECIFIC KNOWN TRAP 鈥� reason/that-clause tense backshift: When a past-tense main clause is followed by "because"/"that" + a clause stating a general truth or belief the speaker still holds, BOTH present tense and past tense are grammatically correct in that clause. Example: "I continued studying because I know that learning a language takes time" is CORRECT AS WRITTEN 鈥� do NOT flag "know" as needing to become "knew". Only flag a tense mismatch in a that/because clause if it states something that was ONLY true in the past (not a lasting belief/fact), e.g. "He said he was hungry" (a past state, not a lasting truth) is fine as is, but "He said he is hungry yesterday" mixing a time marker with wrong tense would be a real error.
+SPECIFIC KNOWN TRAP - reason/that-clause tense backshift: When a past-tense main clause is followed by "because"/"that" + a clause stating a general truth or belief the speaker still holds, BOTH present tense and past tense are grammatically correct in that clause. Example: "I continued studying because I know that learning a language takes time" is CORRECT AS WRITTEN - do NOT flag "know" as needing to become "knew". Only flag a tense mismatch in a that/because clause if it states something that was ONLY true in the past (not a lasting belief/fact), e.g. "He said he was hungry" (a past state, not a lasting truth) is fine as is, but "He said he is hungry yesterday" mixing a time marker with wrong tense would be a real error.
 
-SPECIFIC KNOWN TRAP 鈥� Past Simple vs Past Continuous: "was/were" + adjective or noun (e.g. "I was tired", "She was a teacher") is PAST SIMPLE, not Past Continuous. Past Continuous requires "was/were" + a verb ending in -ing (e.g. "I was studying", "She was cooking"). Double-check every tense you list against the actual verb forms in the text before including it 鈥� do not include a tense unless you can point to the exact word(s) demonstrating it.
+SPECIFIC KNOWN TRAP - Past Simple vs Past Continuous: "was/were" + adjective or noun (e.g. "I was tired", "She was a teacher") is PAST SIMPLE, not Past Continuous. Past Continuous requires "was/were" + a verb ending in -ing (e.g. "I was studying", "She was cooking"). Double-check every tense you list against the actual verb forms in the text before including it - do not include a tense unless you can point to the exact word(s) demonstrating it.
 
-SAME PRECISION RULE APPLIES TO VOCABULARY NOTES: if a word or phrase choice is one of several equally natural options (e.g. "wrote" vs "wrote down"), do not imply one is simply better 鈥� briefly explain the real difference in nuance/meaning instead, so the learner understands when to use each.
+SAME PRECISION RULE APPLIES TO VOCABULARY NOTES: if a word or phrase choice is one of several equally natural options (e.g. "wrote" vs "wrote down"), do not imply one is simply better - briefly explain the real difference in nuance/meaning instead, so the learner understands when to use each.
 
 Respond ONLY in this exact JSON format, no markdown, no extra text:
 {
   "subScores": {"grammar": <1-10>, "vocabulary": <1-10>, "naturalness": <1-10>, "overall": <1-10, roughly the average but use judgment>},
   "summary": "one warm, honest sentence about the overall quality",
   "improvementAreas": ["top 1-3 specific things this learner should focus on next, ordered by importance, short phrases like 'Past tense consistency' or 'Verb + preposition patterns'"],
-  "tensesUsed": ["list of tense names actually used in the text, verified against actual verb forms present 鈥� e.g. Past Simple, Present Perfect"],
-  "corrections": [{"original": "wrong phrase from the text", "corrected": "fixed phrase", "explanation": "short simple rule explaining why 鈥� only for genuine, unambiguous errors"}],
-  "vocabularyNotes": [{"word": "a notable or advanced word they used well, or a word choice worth commenting on", "note": "short comment 鈥� praise, or nuance/difference explained accurately, never implying a wrong 'better' form when both are valid"}],
+  "tensesUsed": ["list of tense names actually used in the text, verified against actual verb forms present - e.g. Past Simple, Present Perfect"],
+  "corrections": [{"original": "wrong phrase from the text", "corrected": "fixed phrase", "explanation": "short simple rule explaining why - only for genuine, unambiguous errors"}],
+  "vocabularyNotes": [{"word": "a notable or advanced word they used well, or a word choice worth commenting on", "note": "short comment - praise, or nuance/difference explained accurately, never implying a wrong 'better' form when both are valid"}],
   "pronunciationTips": [{"word": "a word in the text commonly mispronounced by English learners", "tip": "short friendly tip, e.g. stress pattern or tricky sound"}]
 }
-Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every single one must be a real error, not a matter of style or valid variation. If the writing is excellent, corrections can be an empty array. Always identify at least the main tenses used, and verify each one against the actual text before listing it. Give 2-4 vocabulary notes. Give 1-3 pronunciationTips for words in the text that learners commonly struggle to pronounce (empty array if nothing stands out). improvementAreas should be empty only if the writing is already excellent across the board.`;
+Find ALL genuine grammar errors worth mentioning (not just one) - but every single one must be a real error, not a matter of style or valid variation. If the writing is excellent, corrections can be an empty array. Always identify at least the main tenses used, and verify each one against the actual text before listing it. Give 2-4 vocabulary notes. Give 1-3 pronunciationTips for words in the text that learners commonly struggle to pronounce (empty array if nothing stands out). improvementAreas should be empty only if the writing is already excellent across the board.`;
 
       const response = await fetch("/api/generate", {
         method: "POST",
@@ -1171,6 +1307,9 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
         }),
       });
       const data = await response.json();
+      if (!response.ok || data.error) {
+        throw new Error(data.error?.message || `Server responded with status ${response.status}`);
+      }
       const raw = data.content.map((b) => (b.type === "text" ? b.text : "")).join("").trim();
       const clean = raw.replace(/```json|```/g, "").trim();
       let parsed;
@@ -1179,7 +1318,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
       } catch {
         parsed = {
           subScores: null,
-          summary: "Couldn't fully analyze this 鈥� try again in a moment.",
+          summary: "Couldn't fully analyze this - try again in a moment.",
           improvementAreas: [],
           tensesUsed: [],
           corrections: [],
@@ -1192,7 +1331,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
     } catch (err) {
       setWritingResult({
         subScores: null,
-        summary: "Something went wrong reaching the writing coach. Try again in a moment.",
+        summary: "Couldn't reach the AI. Reason: " + (err.message || "unknown error") + " - if this keeps happening, the free credit may be used up.",
         improvementAreas: [],
         tensesUsed: [],
         corrections: [],
@@ -1237,11 +1376,15 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             <span
               style={{
                 fontFamily: "'Helvetica Neue', Arial, sans-serif",
-                fontSize: 12,
+                fontSize: 11.5,
                 color: "#9CB8AC",
+                textAlign: "right",
+                lineHeight: 1.3,
               }}
             >
-              {remaining}/{DAILY_LIMIT} free today
+              {remaining}/{DAILY_LIMIT} free AI uses left today
+              <br />
+              <span style={{ fontSize: 10, color: "#6E8480" }}>Chat, Review & Q&A share this</span>
             </span>
             <button
               onClick={() => setShowSettings((s) => !s)}
@@ -1280,154 +1423,88 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               lineHeight: 1.5,
             }}
           >
-            Voice playback isn't available in this browser right now 鈥� text still works fine.
+            Voice playback isn't available in this browser right now - text still works fine.
           </p>
         )}
 
-        <div
-          style={{
-            display: "flex",
-            gap: 6,
-            marginBottom: 16,
-            background: "#0F1E1F",
-            borderRadius: 12,
-            padding: 4,
-            overflowX: "auto",
-          }}
-        >
+        <div style={{ marginBottom: 16, position: "relative" }}>
           <button
-            onClick={() => setTab("chat")}
+            onClick={() => setShowTabMenu((s) => !s)}
             style={{
-              flex: "0 0 auto",
-              minWidth: 66,
+              width: "100%",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "chat" ? "#22383A" : "transparent",
-              color: tab === "chat" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
+              justifyContent: "space-between",
+              background: "#22383A",
+              border: "1px solid #35504F",
+              borderRadius: 12,
+              padding: "12px 14px",
               cursor: "pointer",
-              whiteSpace: "nowrap",
             }}
           >
-            <MessageCircle size={14} /> Chat
+            <span style={{ display: "flex", alignItems: "center", gap: 8, color: "#F3ECDD", fontFamily: "'Helvetica Neue', Arial, sans-serif", fontSize: 15, fontWeight: 600 }}>
+              {(() => {
+                const current = TAB_LIST.find((t) => t.id === tab) || TAB_LIST[0];
+                const CurrentIcon = current.Icon;
+                return (
+                  <>
+                    <CurrentIcon size={17} /> {current.label}
+                  </>
+                );
+              })()}
+            </span>
+            <Menu size={18} color="#9CB8AC" />
           </button>
-          <button
-            onClick={() => setTab("practice")}
-            style={{
-              flex: "0 0 auto",
-              minWidth: 78,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "practice" ? "#22383A" : "transparent",
-              color: tab === "practice" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <Repeat size={14} /> Practice
-          </button>
-          <button
-            onClick={() => setTab("vocab")}
-            style={{
-              flex: "0 0 auto",
-              minWidth: 72,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "vocab" ? "#22383A" : "transparent",
-              color: tab === "vocab" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <Sparkles size={14} /> Words
-          </button>
-          <button
-            onClick={() => setTab("grammar")}
-            style={{
-              flex: "0 0 auto",
-              minWidth: 80,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "grammar" ? "#22383A" : "transparent",
-              color: tab === "grammar" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <Settings size={14} /> Grammar
-          </button>
-          <button
-            onClick={() => setTab("qa")}
-            style={{
-              flex: "0 0 auto",
-              minWidth: 60,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "qa" ? "#22383A" : "transparent",
-              color: tab === "qa" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <MessageCircle size={14} /> Q&A
-          </button>
-          <button
-            onClick={() => setTab("write")}
-            style={{
-              flex: "0 0 auto",
-              minWidth: 70,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 5,
-              padding: "8px 10px",
-              borderRadius: 9,
-              border: "none",
-              background: tab === "write" ? "#22383A" : "transparent",
-              color: tab === "write" ? "#F3ECDD" : "#7A9691",
-              fontFamily: "'Helvetica Neue', Arial, sans-serif",
-              fontSize: 12.5,
-              cursor: "pointer",
-              whiteSpace: "nowrap",
-            }}
-          >
-            <PenLine size={14} /> Review
-          </button>
+
+          {showTabMenu && (
+            <div
+              style={{
+                position: "absolute",
+                top: "calc(100% + 6px)",
+                left: 0,
+                right: 0,
+                background: "#22383A",
+                border: "1px solid #35504F",
+                borderRadius: 14,
+                overflow: "hidden",
+                zIndex: 20,
+                boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+              }}
+            >
+              {TAB_LIST.map((t) => {
+                const TIcon = t.Icon;
+                const isActive = tab === t.id;
+                return (
+                  <button
+                    key={t.id}
+                    onClick={() => {
+                      setTab(t.id);
+                      setShowTabMenu(false);
+                    }}
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 10,
+                      background: isActive ? "#0F1E1F" : "transparent",
+                      border: "none",
+                      borderBottom: "1px solid #1B2E22",
+                      padding: "13px 16px",
+                      cursor: "pointer",
+                      color: isActive ? "#E8B04B" : "#F3ECDD",
+                      fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                      fontSize: 14.5,
+                      textAlign: "left",
+                    }}
+                  >
+                    <TIcon size={16} /> {t.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
+
 
         {showSettings && (
           <div
@@ -1489,6 +1566,38 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                   </button>
                 ))}
               </div>
+            </div>
+
+            <div
+              style={{
+                marginTop: 14,
+                paddingTop: 12,
+                borderTop: "1px solid #35504F",
+                fontSize: 11.5,
+                color: "#9CB8AC",
+                lineHeight: 1.5,
+              }}
+            >
+              {voices.filter((v) => v.lang.startsWith("en")).length} English voice(s) found on this device.
+              {lastVoiceUsed ? (
+                <>
+                  <br />
+                  Last played with: <span style={{ color: "#F3ECDD" }}>{lastVoiceUsed.name}</span> ({lastVoiceUsed.lang})
+                  {!lastVoiceUsed.matchedAccent && (
+                    <>
+                      <br />
+                      <span style={{ color: "#C9634A" }}>
+                        This device does not have a {ACCENTS.find((a) => a.id === accent)?.label} voice installed - using the closest available one instead.
+                      </span>
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  <br />
+                  Tap "Hear it" anywhere to check which voice this device uses.
+                </>
+              )}
             </div>
           </div>
         )}
@@ -1572,7 +1681,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               marginBottom: 10,
             }}
           >
-            {currentCategory.category} 路 {sentenceIndex + 1}/
+            {currentCategory.category} - {sentenceIndex + 1}/
             {currentCategory.sentences.length}
           </div>
 
@@ -1618,7 +1727,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               marginBottom: 10,
             }}
           >
-            Now repeat it out loud 鈥� {repeatCount}/3 times
+            Now repeat it out loud - {repeatCount}/3 times
           </div>
 
           <button
@@ -1641,7 +1750,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             }}
           >
             {shadowListening ? <Square size={16} /> : <Mic size={16} />}
-            {shadowListening ? "Listening鈥�" : "Tap to repeat"}
+            {shadowListening ? "Listening..." : "Tap to repeat"}
           </button>
 
           {shadowText && (() => {
@@ -1692,7 +1801,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                         color: "#C9A96A",
                       }}
                     >
-                      Match: {comparison.accuracy}% 鈥� words marked 鉂� were missing or said differently.
+                      Match: {comparison.accuracy}% - words marked 鉂� were missing or said differently.
                     </div>
                   </>
                 )}
@@ -2250,7 +2359,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                   marginBottom: 10,
                 }}
               >
-                {GRAMMAR_CATEGORIES[grammarCategoryIndex].category} 路 {grammarIndex + 1}/
+                {GRAMMAR_CATEGORIES[grammarCategoryIndex].category} - {grammarIndex + 1}/
                 {GRAMMAR_CATEGORIES[grammarCategoryIndex].topics.length}
               </div>
 
@@ -2397,6 +2506,268 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
         </div>
       )}
 
+      {tab === "reading" && (
+        <div
+          style={{
+            width: "100%",
+            maxWidth: 560,
+            flex: 1,
+            padding: "8px 20px",
+            display: "flex",
+            flexDirection: "column",
+            overflowY: "auto",
+          }}
+        >
+          {readingPassageIndex === null ? (
+            <div style={{ display: "flex", flexDirection: "column", gap: 10, paddingBottom: 20 }}>
+              <p
+                style={{
+                  fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 12.5,
+                  color: "#9CB8AC",
+                  margin: "4px 0 6px",
+                }}
+              >
+                Choose a passage to read
+              </p>
+              {READING_PASSAGES.map((p, idx) => (
+                <button
+                  key={p.title}
+                  onClick={() => openReadingPassage(idx)}
+                  style={{
+                    background: "#22383A",
+                    border: "1px solid #35504F",
+                    borderRadius: 14,
+                    padding: "16px 18px",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 4,
+                    cursor: "pointer",
+                    color: "#F3ECDD",
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 15,
+                    textAlign: "left",
+                  }}
+                >
+                  <span style={{ fontWeight: 600 }}>{p.title}</span>
+                  <span style={{ fontSize: 12, color: "#9CB8AC" }}>{p.level} - 3 questions</span>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <>
+              <button
+                onClick={() => setReadingPassageIndex(null)}
+                style={{
+                  background: "transparent",
+                  border: "none",
+                  color: "#9CB8AC",
+                  fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 12.5,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 4,
+                  cursor: "pointer",
+                  padding: 0,
+                  marginBottom: 10,
+                  alignSelf: "flex-start",
+                }}
+              >
+                <ChevronLeft size={14} /> All passages
+              </button>
+
+              {(() => {
+                const passage = READING_PASSAGES[readingPassageIndex];
+                const finished = readingQIndex >= passage.questions.length;
+
+                if (finished) {
+                  return (
+                    <div
+                      style={{
+                        background: "#22383A",
+                        borderRadius: 16,
+                        padding: "22px 20px",
+                        textAlign: "center",
+                      }}
+                    >
+                      <Award size={28} color="#E8B04B" style={{ marginBottom: 10 }} />
+                      <p style={{ fontSize: 18, fontWeight: 700, margin: "0 0 6px", color: "#F3ECDD" }}>
+                        {readingScore}/{passage.questions.length} correct
+                      </p>
+                      <p
+                        style={{
+                          fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                          fontSize: 13,
+                          color: "#9CB8AC",
+                          margin: "0 0 16px",
+                        }}
+                      >
+                        Nice work reading "{passage.title}"!
+                      </p>
+                      <button
+                        onClick={() => setReadingPassageIndex(null)}
+                        style={{
+                          background: "#E8B04B",
+                          border: "none",
+                          borderRadius: 12,
+                          padding: "10px 20px",
+                          color: "#1B2E22",
+                          fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                          fontSize: 14,
+                          fontWeight: 600,
+                          cursor: "pointer",
+                        }}
+                      >
+                        Choose another passage
+                      </button>
+                    </div>
+                  );
+                }
+
+                const q = passage.questions[readingQIndex];
+
+                return (
+                  <>
+                    <div
+                      style={{
+                        fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                        fontSize: 12,
+                        color: "#9CB8AC",
+                        marginBottom: 8,
+                      }}
+                    >
+                      {passage.level} - {passage.title}
+                    </div>
+                    <div
+                      style={{
+                        background: "#22383A",
+                        borderRadius: 16,
+                        padding: "16px 18px",
+                        marginBottom: 14,
+                        display: "flex",
+                        gap: 8,
+                        alignItems: "flex-start",
+                      }}
+                    >
+                      <p
+                        style={{
+                          fontSize: 15,
+                          lineHeight: 1.6,
+                          margin: 0,
+                          color: "#F3ECDD",
+                          flex: 1,
+                        }}
+                      >
+                        {passage.text}
+                      </p>
+                      <button
+                        onClick={() => speak(passage.text)}
+                        style={{ background: "transparent", border: "none", cursor: "pointer", flexShrink: 0 }}
+                      >
+                        <Volume2 size={16} color="#9CB8AC" />
+                      </button>
+                    </div>
+
+                    <div
+                      style={{
+                        fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                        fontSize: 12,
+                        color: "#9CB8AC",
+                        marginBottom: 8,
+                      }}
+                    >
+                      Question {readingQIndex + 1}/{passage.questions.length} - Score: {readingScore}/{readingAnswered}
+                    </div>
+
+                    <div
+                      style={{
+                        background: "#22383A",
+                        borderRadius: 18,
+                        padding: "20px 18px",
+                        marginBottom: 16,
+                      }}
+                    >
+                      <p style={{ fontSize: 16, lineHeight: 1.5, margin: "0 0 16px", color: "#F3ECDD" }}>
+                        {q.question}
+                      </p>
+                      {q.options.map((opt, oi) => {
+                        const isSelected = readingSelected === oi;
+                        const isCorrect = oi === q.correct;
+                        let bg = "#0F1E1F";
+                        let border = "#35504F";
+                        if (readingSelected !== null) {
+                          if (isCorrect) {
+                            bg = "#1F3A2A";
+                            border = "#8FBF9F";
+                          } else if (isSelected) {
+                            bg = "#3A1F1F";
+                            border = "#C9634A";
+                          }
+                        }
+                        return (
+                          <button
+                            key={oi}
+                            onClick={() => selectReadingAnswer(oi)}
+                            style={{
+                              width: "100%",
+                              textAlign: "left",
+                              background: bg,
+                              border: "1px solid " + border,
+                              borderRadius: 12,
+                              padding: "11px 14px",
+                              marginBottom: 8,
+                              color: "#F3ECDD",
+                              fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                              fontSize: 14,
+                              cursor: readingSelected === null ? "pointer" : "default",
+                            }}
+                          >
+                            {opt}
+                          </button>
+                        );
+                      })}
+                      {readingSelected !== null && (
+                        <p
+                          style={{
+                            fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                            fontSize: 12.5,
+                            color: "#C9A96A",
+                            marginTop: 10,
+                            lineHeight: 1.5,
+                          }}
+                        >
+                          馃挕 {q.explanation}
+                        </p>
+                      )}
+                    </div>
+
+                    <button
+                      onClick={nextReadingQuestion}
+                      disabled={readingSelected === null}
+                      style={{
+                        background: "#E8B04B",
+                        border: "none",
+                        borderRadius: 12,
+                        padding: "12px",
+                        color: "#1B2E22",
+                        fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                        fontSize: 14,
+                        fontWeight: 600,
+                        cursor: readingSelected !== null ? "pointer" : "default",
+                        opacity: readingSelected !== null ? 1 : 0.5,
+                        marginBottom: 20,
+                      }}
+                    >
+                      {readingQIndex + 1 >= passage.questions.length ? "See results" : "Next question"}
+                    </button>
+                  </>
+                );
+              })()}
+            </>
+          )}
+        </div>
+      )}
+
       {tab === "qa" && (
         <div
           style={{
@@ -2446,7 +2817,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             <textarea
               value={qaAnswer}
               onChange={(e) => setQaAnswer(e.target.value)}
-              placeholder={qaListening ? "Listening鈥�" : "Type or speak your answer鈥�"}
+              placeholder={qaListening ? "Listening..." : "Type or speak your answer..."}
               rows={3}
               style={{
                 flex: 1,
@@ -2500,7 +2871,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               marginBottom: 8,
             }}
           >
-            {limitReached ? "Daily limit reached" : qaLoading ? "Thinking鈥�" : "Check my answer"}
+            {limitReached ? "Daily limit reached" : qaLoading ? "Thinking..." : "Check my answer"}
           </button>
           {limitReached && (
             <p
@@ -2580,6 +2951,146 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             overflowY: "auto",
           }}
         >
+          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+            <button
+              onClick={() => setWritingTipsMode(false)}
+              style={{
+                flex: 1,
+                padding: "8px 6px",
+                borderRadius: 10,
+                border: "1px solid " + (!writingTipsMode ? "#E8B04B" : "#35504F"),
+                background: !writingTipsMode ? "#E8B04B" : "transparent",
+                color: !writingTipsMode ? "#1B2E22" : "#F3ECDD",
+                fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                fontSize: 12.5,
+                cursor: "pointer",
+              }}
+            >
+              Review My English
+            </button>
+            <button
+              onClick={() => setWritingTipsMode(true)}
+              style={{
+                flex: 1,
+                padding: "8px 6px",
+                borderRadius: 10,
+                border: "1px solid " + (writingTipsMode ? "#E8B04B" : "#35504F"),
+                background: writingTipsMode ? "#E8B04B" : "transparent",
+                color: writingTipsMode ? "#1B2E22" : "#F3ECDD",
+                fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                fontSize: 12.5,
+                cursor: "pointer",
+              }}
+            >
+              Writing Tips
+            </button>
+          </div>
+
+          {writingTipsMode ? (
+            <div style={{ display: "flex", flexDirection: "column", paddingBottom: 20 }}>
+              <div
+                style={{
+                  fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 12,
+                  color: "#9CB8AC",
+                  marginBottom: 10,
+                }}
+              >
+                Tip {writingTipIndex + 1}/{WRITING_TIPS.length}
+              </div>
+              <div
+                style={{
+                  background: "#22383A",
+                  borderRadius: 18,
+                  padding: "20px 18px",
+                  marginBottom: 16,
+                }}
+              >
+                <p style={{ fontSize: 18, fontWeight: 600, margin: "0 0 12px", color: "#F3ECDD" }}>
+                  {WRITING_TIPS[writingTipIndex].title}
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 14,
+                    color: "#F3ECDD",
+                    lineHeight: 1.55,
+                    margin: "0 0 14px",
+                  }}
+                >
+                  {WRITING_TIPS[writingTipIndex].explanation}
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 11.5,
+                    color: "#C9A96A",
+                    textTransform: "uppercase",
+                    letterSpacing: 0.5,
+                    margin: "0 0 6px",
+                  }}
+                >
+                  Example
+                </p>
+                <p
+                  style={{
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 13.5,
+                    color: "#B9AE95",
+                    lineHeight: 1.5,
+                    fontStyle: "italic",
+                    margin: 0,
+                  }}
+                >
+                  {WRITING_TIPS[writingTipIndex].example}
+                </p>
+              </div>
+              <div style={{ display: "flex", gap: 10, marginBottom: 20 }}>
+                <button
+                  onClick={() => setWritingTipIndex((i) => (i === 0 ? WRITING_TIPS.length - 1 : i - 1))}
+                  style={{
+                    flex: 1,
+                    background: "transparent",
+                    border: "1px solid #35504F",
+                    borderRadius: 12,
+                    padding: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    color: "#F3ECDD",
+                    cursor: "pointer",
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 13,
+                  }}
+                >
+                  <ChevronLeft size={16} /> Back
+                </button>
+                <button
+                  onClick={() => setWritingTipIndex((i) => (i + 1) % WRITING_TIPS.length)}
+                  style={{
+                    flex: 1,
+                    background: "#E8B04B",
+                    border: "none",
+                    borderRadius: 12,
+                    padding: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 6,
+                    color: "#1B2E22",
+                    cursor: "pointer",
+                    fontFamily: "'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 13,
+                    fontWeight: 600,
+                  }}
+                >
+                  Next <ChevronRight size={16} />
+                </button>
+              </div>
+            </div>
+          ) : (
+          <>
           <p
             style={{
               fontFamily: "'Helvetica Neue', Arial, sans-serif",
@@ -2589,14 +3100,14 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               lineHeight: 1.5,
             }}
           >
-            Speak or write a few sentences 鈥� get a full review: grammar, vocabulary tips, and pronunciation notes.
+            Speak or write a few sentences - get a full review: grammar, vocabulary tips, and pronunciation notes.
           </p>
 
           <div style={{ display: "flex", gap: 8, alignItems: "flex-start", marginBottom: 12 }}>
             <textarea
               value={writingText}
               onChange={(e) => setWritingText(e.target.value)}
-              placeholder={writingListening ? "Listening鈥� speak your paragraph" : "Speak (tap mic) or type your paragraph here鈥�"}
+              placeholder={writingListening ? "Listening... speak your paragraph" : "Speak (tap mic) or type your paragraph here..."}
               rows={7}
               style={{
                 flex: 1,
@@ -2652,7 +3163,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                 opacity: writingText.trim() && !limitReached ? 1 : 0.5,
               }}
             >
-              {limitReached ? "Daily limit reached" : writingLoading ? "Reviewing鈥�" : "Review my writing"}
+              {limitReached ? "Daily limit reached" : writingLoading ? "Reviewing..." : "Review my writing"}
             </button>
             {writingResult && (
               <button
@@ -2714,7 +3225,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                     <p style={{ fontSize: 20, fontWeight: 700, margin: 0, color: "#F3ECDD" }}>
                       {writingResult.subScores && writingResult.subScores.overall !== undefined
                         ? `${writingResult.subScores.overall}/10 Overall`
-                        : "鈥�"}
+                        : "-"}
                     </p>
                     <p
                       style={{
@@ -2917,7 +3428,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                         }}
                       >
                         <span style={{ color: "#E8B04B", fontWeight: 600 }}>{v.word}</span>
-                        <span style={{ color: "#B9AE95" }}> 鈥� {v.note}</span>
+                        <span style={{ color: "#B9AE95" }}> - {v.note}</span>
                       </div>
                     ))}
                   </div>
@@ -2957,7 +3468,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                         <Volume2 size={13} style={{ marginTop: 2, flexShrink: 0, color: "#8FBF9F" }} />
                         <span>
                           <span style={{ color: "#8FBF9F", fontWeight: 600 }}>{p.word}</span>
-                          <span style={{ color: "#B9AE95" }}> 鈥� {p.tip}</span>
+                          <span style={{ color: "#B9AE95" }}> - {p.tip}</span>
                         </span>
                         <button
                           onClick={() => speak(p.word)}
@@ -2971,6 +3482,8 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                 </div>
               )}
             </div>
+          )}
+          </>
           )}
         </div>
       )}
@@ -3107,7 +3620,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             {[
               { label: "Talk about my day", prompt: "Let's talk about my day today." },
               { label: "Practice an interview", prompt: "Can we practice a job interview?" },
-              { label: "Improve my English", prompt: "I want to improve my English 鈥� where should we start?" },
+              { label: "Improve my English", prompt: "I want to improve my English - where should we start?" },
             ].map((s) => (
               <button
                 key={s.label}
@@ -3140,7 +3653,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
                 fontSize: 14,
               }}
             >
-              typing鈥�
+              typing...
             </div>
           </div>
         )}
@@ -3163,7 +3676,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
             }}
           >
             You've used today's {DAILY_LIMIT} free conversations. Come back
-            tomorrow 鈥� or premium (unlimited) is coming soon.
+            tomorrow - or premium (unlimited) is coming soon.
           </div>
         ) : (
           <div
@@ -3204,7 +3717,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder={listening ? "Listening鈥�" : "Type or tap the mic to speak鈥�"}
+              placeholder={listening ? "Listening..." : "Type or tap the mic to speak..."}
               rows={1}
               style={{
                 flex: 1,
@@ -3249,7 +3762,7 @@ Find ALL genuine grammar errors worth mentioning (not just one) 鈥� but every
               textAlign: "center",
             }}
           >
-            Voice input isn't supported in this browser 鈥� typing still works.
+            Voice input isn't supported in this browser - typing still works.
           </p>
         )}
       </div>
